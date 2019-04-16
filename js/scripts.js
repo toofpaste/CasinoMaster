@@ -1,9 +1,9 @@
 //Business Logic --------------------------------------------------------------
 
 var secretNumber = Math.floor(Math.random() * 1000);
-console.log("secretNumber", secretNumber);
+// console.log("secretNumber", secretNumber);
 
-function compareNumbers(guessedNumber, secretNumber) {
+function compareNumbers(guessedNumber, secretNumber, attempt) {
   if(guessedNumber === secretNumber) {
     $("#underOverOutput").text("Congratulations, you guessed the number!")
     // console.log("compareNumbers function", "Congratulations, you've WON!")
@@ -15,11 +15,14 @@ function compareNumbers(guessedNumber, secretNumber) {
     // console.log("Guess again, it's higher");
   }
   var difference = Math.abs(guessedNumber - secretNumber);
-  console.log("difference", difference);
+  // console.log("difference", difference);
   if((guessedNumber === secretNumber)) {
     $("#output").removeClass();
     $("#output").addClass("success");
     $("#hotColdOutput").text("");
+    if(countGuess !== 1){
+    $("#attemptOutput").text("It took you " + attempt.attempts[attempt.attempts.length - 1].id + " attempts");
+  } else $("#attemptOutput").text("It took you 1 attempt");
     // console.log("No text needed");
   } else if(difference < 5) {
     $("#output").removeClass();
@@ -63,8 +66,27 @@ function compareNumbers(guessedNumber, secretNumber) {
     // console.log("You're not even within 500!");
   }
 }
+var countGuess = 0;
+function Attempts() {
+  this.attempts = [],
+  this.currentAttemptId = 1
+  countGuess++;
+  // console.log("Attempts", attempt);
+}
+
+Attempts.prototype.addAttempt = function(attempt) {
+  attempt.id = this.assignAttemptId();
+  this.attempts.push(attempt);
+}
+
+Attempts.prototype.assignAttemptId = function() {
+  this.currentAttemptId += 1;
+  return this.currentAttemptId;
+}
 
 //User Interface Logic ---------------------------------------------------------
+
+var attempt = new Attempts();
 
 $(document).ready(function() {
   // $("#userInput").submit(function(event){
@@ -79,7 +101,9 @@ $(document).ready(function() {
     console.log("guessedNumber", guessedNumber);
     // var rangeNumber = parseInt($("input#rangeNumber").val());
     // console.log("rangeNumber", rangeNumber);
-    compareNumbers(guessedNumber, secretNumber);
+    compareNumbers(guessedNumber, secretNumber, attempt);
+    var newAttempt = new Attempts(attempt);
+    attempt.addAttempt(newAttempt);
     $("#output").show();
     $("#guessedNumber").val("");
   })
