@@ -17,38 +17,47 @@ function compareNumbers(guessedNumber, secretNumber) {
   var difference = Math.abs(guessedNumber - secretNumber);
   console.log("difference", difference);
   if((guessedNumber === secretNumber)) {
+    $("#output").removeClass();
     $("#output").addClass("success");
     $("#hotColdOutput").text("");
     // console.log("No text needed");
   } else if(difference < 5) {
+    $("#output").removeClass();
     $("#output").addClass("within5");
     $("#hotColdOutput").text("You are within 5");
     // console.log("You are within 10");
   } else if(difference < 10) {
+    $("#output").removeClass();
     $("#output").addClass("within10");
     $("#hotColdOutput").text("You are within 10");
     // console.log("You are within 10");
   } else if (difference < 25) {
+    $("#output").removeClass();
     $("#output").addClass("within25");
     $("#hotColdOutput").text("You are within 25");
     // console.log("You are within 50");
   } else if (difference < 50) {
+    $("#output").removeClass();
     $("#output").addClass("within50");
     $("#hotColdOutput").text("You are within 50");
     // console.log("You are within 50");within10
   } else if (difference < 100) {
+    $("#output").removeClass();
     $("#output").addClass("within100");
     $("#hotColdOutput").text("You are within 100");
     // console.log("You are within 100");
   } else if (difference < 250) {
+    $("#output").removeClass();
     $("#output").addClass("within250");
     $("#hotColdOutput").text("You are within 250");
     // console.log("You are within 250");
   } else if (difference < 500) {
+    $("#output").removeClass();
     $("#output").addClass("within500");
     $("#hotColdOutput").text("You are within 500");
     // console.log("You're within 500");
   } else if (difference < 1000) {
+    $("#output").removeClass();
     $("#output").addClass("notwithin500");
     $("#hotColdOutput").text("You're not even within 500!");
     // console.log("You're not even within 500!");
