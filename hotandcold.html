@@ -52,15 +52,17 @@ Editing this section is generally not recommended. -->
           <input id="guessedNumber" type="number" class="form-control" name="user-input" required/>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-info">Guess!</button>
+          <button type="submit" class="btn btn-dark">Guess!</button>
+          <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">New Game</button>
         </div>
       </form>
 
       <!-- This section is the program's output ----------------------------------------------------------------->
 
       <div class="jumbotron" id="output">
-        <h3 id="underOverOutput"></span></h3>
-        <h5 id="hotColdOutput"</h5>
+        <h3 id="underOverOutput"></h3>
+        <h5 id="hotColdOutput"></h5>
+        <h5 id="attemptOutput"></h5>
       </div>
       <!-- <div id="output">
         <h3><span id="underOverOutput"></span></h3>
