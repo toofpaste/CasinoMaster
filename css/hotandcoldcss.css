@@ -1,21 +1,54 @@
 #output {
   display: none;
+  text-align: center;
+  font-family: 'Fascinate Inline', cursive;
 }
-.burning {
+
+.success {
+  background-color: red;
+  color: white;
+}
+
+.within5 {
   color: red;
 }
-.hot {
+
+.within10 {
   color: orange;
 }
-.warm {
+
+.within25 {
   color: brown;
 }
-.chilly {
+
+.within50 {
   color: green;
 }
-.cold {
+
+.within100 {
   color: aquamarine;
 }
-.freezing {
+
+.within250 {
   color: black;
 }
+
+.within500 {
+  color: black;
+}
+
+.within1000 {
+  color: black;
+}
+
+/* h3, h5 {
+  font-family: 'Fascinate Inline', cursive;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #aa9c19;
+  opacity: .9;
+} */
+
+/* border: 1px solid black; */
+/* background-color: grey; */
