@@ -24,53 +24,74 @@
 }
 
 .within10 {
-  background-color: red;
-  opacity: 0.90;
+  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within20 {
-  background-color: red;
-  opacity: 0.80;
+  background-image: url(https://i.imgur.com/gDgBBBN.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within30 {
-  background-color: red;
-  opacity: 0.70;
+  background-image: url(http://deaddarlings.com/wp-content/uploads/2017/06/800px-Campfires_flames.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within40 {
-  background-color: red;
-  opacity: 0.60;
+  background-image: url(https://i.imgur.com/gJZnsno.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within50 {
-  background-image: linear-gradient(red 50%, blue 50%);
-  opacity: 0.50;
+  background-image: url(https://i.imgur.com/1THjrO3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within60 {
-  background-color: blue;
-  opacity: 0.60;
+  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within70 {
-  background-color: blue;
-  opacity: 0.70;
+  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within80 {
-  background-color: blue;
-  opacity: 0.80;
+  background-image: url(https://i.imgur.com/3guyKnJ.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within90 {
-  background-color: blue;
-  opacity: 0.90;
+
+  background-image: url(https://media1.tenor.com/images/e54295364390057f7482f2966e2a4cd0/tenor.gif?itemid=5390133);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .tooFar {
-  background-color: blue;
-  opacity: 0.1;
+  background-image: url(http://pngimg.com/uploads/astronaut/astronaut_PNG13.png);
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
 }
 
 /* h3, h5 {
