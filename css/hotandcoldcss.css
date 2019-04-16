@@ -2,43 +2,44 @@
   display: none;
   text-align: center;
   font-family: 'Fascinate Inline', cursive;
+  padding: 20px;
 }
 
 .success {
-  background-color: red;
+  background-color:#F90505;
   color: white;
 }
 
 .within5 {
-  color: red;
+  background-color:#FF4F00;
 }
 
 .within10 {
-  color: orange;
+  background-color:#FF6B00;
 }
 
 .within25 {
-  color: brown;
+  background-color:#FF9800;
 }
 
 .within50 {
-  color: green;
+  background-color:#FFC600;
 }
 
 .within100 {
-  color: aquamarine;
+  background-color:#00FFDA  ;
 }
 
 .within250 {
-  color: black;
+  background-color:#00C9FF;
 }
 
 .within500 {
-  color: black;
+  background-color:#009CFF;
 }
 
-.within1000 {
-  color: black;
+.notwithin500 {
+  background-color:#002BFF;
 }
 
 /* h3, h5 {
