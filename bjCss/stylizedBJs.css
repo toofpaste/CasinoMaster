@@ -39,3 +39,20 @@ img {
   display: flex;
   display: none;
 }
+
+
+
+#cardA1, #cardA2, #cardA3, #cardA4, #cardA5, #cardA6, #cardA7, #cardA9{
+  float: left;
+  height: 200px;
+  list-style-type: none;
+  display: inline;
+  display: none;
+}
+#cardD1, #cardD2, #cardD3, #cardD4, #cardD5, #cardD6, #cardD7, #cardD9{
+  float: left;
+  height: 200px;
+  list-style-type: none;
+  display: inline;
+  display: none;
+}
