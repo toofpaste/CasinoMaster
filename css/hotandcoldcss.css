@@ -5,41 +5,72 @@
   padding: 20px;
 }
 
-.success {
-  background-color:#F90505;
+.white {
   color: white;
 }
 
+.success {
+  background-image: url(https://i.imgur.com/9VaUjkj.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .within5 {
-  background-color:#FF4F00;
+  background-image: url(https://i.imgur.com/bU9USjt.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .within10 {
-  background-color:#FF6B00;
+  background-color: red;
+  opacity: 0.90;
 }
 
-.within25 {
-  background-color:#FF9800;
+.within20 {
+  background-color: red;
+  opacity: 0.80;
+}
+
+.within30 {
+  background-color: red;
+  opacity: 0.70;
+}
+
+.within40 {
+  background-color: red;
+  opacity: 0.60;
 }
 
 .within50 {
-  background-color:#FFC600;
+  background-image: linear-gradient(red 50%, blue 50%);
+  opacity: 0.50;
 }
 
-.within100 {
-  background-color:#00FFDA  ;
+.within60 {
+  background-color: blue;
+  opacity: 0.60;
 }
 
-.within250 {
-  background-color:#00C9FF;
+.within70 {
+  background-color: blue;
+  opacity: 0.70;
 }
 
-.within500 {
-  background-color:#009CFF;
+.within80 {
+  background-color: blue;
+  opacity: 0.80;
 }
 
-.notwithin500 {
-  background-color:#002BFF;
+.within90 {
+  background-color: blue;
+  opacity: 0.90;
+}
+
+.tooFar {
+  background-color: blue;
+  opacity: 0.1;
 }
 
 /* h3, h5 {
