@@ -92,13 +92,10 @@ function spin(){
     }, timeA);
   })(35);
   var timeB = 100;
-  var timeCoun = 100;
   (function theLoop (i) {
     setTimeout(function () {
       var random = Math.floor(Math.random() * 4) + 1;
       timeB += 10;
-      timeCoun += timeB;
-      console.log(timeCoun);
       printB(random);
       if (--i) {          // If i > 0, keep going
         theLoop(i);       // Call the loop again, and pass it the current value of i

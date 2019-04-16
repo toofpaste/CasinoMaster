@@ -246,6 +246,7 @@ img{
   position: absolute;
 }
 #spinButton {
+  visibility: none;
   margin-bottom: 0%;
 }
 
