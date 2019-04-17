@@ -5,11 +5,11 @@ Editing this section is generally not recommended. -->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/hotandcoldcss.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <link rel="stylesheet" href="css/hotandcoldcss.css">
+  <link href="hotandcoldcss/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="hotandcoldcss/hotandcoldcss.css" rel="stylesheet" type="text/css">
+  <script src="hotandcoldjs/jquery-3.3.1.js"></script>
+  <script src="hotandcoldjs/hotandcold.js"></script>
+  <link rel="stylesheet" href="hotandcoldcss/hotandcoldcss.css">
   <title>Site Title</title>
 </head>
   <body>
@@ -22,32 +22,58 @@ Editing this section is generally not recommended. -->
         <p>A Simple Game From Your Childhood</p>
       </div>
 
-      <!-- This section is the diffulty level setting ----------------------------------------------------------->
+      <!-- This section is selectLevel ----------------------------------------------------------->
 
-      <form id="userInput">
-        <!-- <div class="radio">
-          <h5>Choose difficulty level</h5>
-          <label>
-            <input type="radio" name="level" value="easy">Piece of Cake
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="level" value="medium">Harder
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="level" value="hard">Nightmare
-          </label>
-        </div> -->
+      <form id="selectLevel">
+        <div class="row">
+          <div class="col-md-4">
+            <div id="easy">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/easy.jpg" alt="picture of Peter Griffin">
+                <div class="card-body">
+                  <h5 class="card-title">Easy</h5>
+                  <em>Range 0 to 100</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="medium">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/medium.jpg" alt="picture of Kyoto">
+                <div class="card-body">
+                  <h5 class="card-title">Medium</h5>
+                  <em>Range 0 to 1000</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="hard">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/hard.jpg" alt="picture of Bordeaux">
+                <div class="card-body">
+                  <h5 class="card-title">Hard</h5>
+                  <em>Range 0 to 10000</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
 
-        <!-- This section is the user's range input ------------------------------------------------------------->
+        <!-- <label for="user-input">Enter an upper range number:</label>
+        <input id="rangeNumber" type="number" class="form-control" name="user-input"> -->
 
+        <!-- This section is compareNumbers ------------------------------------------------------------->
+
+      <form id="compareNumbers">
         <div class="form-group">
-          <!-- <label for="user-input">Enter an upper range number:</label>
-          <input id="rangeNumber" type="number" class="form-control" name="user-input"> -->
-
-          <!-- This section is the user's Guess Number input ----------------------------------------------------->
-
           <label for="user-input">Guess the number:</label>
           <input id="guessedNumber" type="number" class="form-control" name="user-input" required/>
         </div>
@@ -72,6 +98,6 @@ Editing this section is generally not recommended. -->
       <!-- As with the very first section,
       this section should generally not be edited. -------------------------------------------------------------->
 
-    </div>
-  </body>
-</html>
+      </div>
+      </body>
+      </html>
