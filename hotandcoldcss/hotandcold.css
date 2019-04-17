@@ -2,20 +2,26 @@
   display: none;
 }
 
-.card-body {
-  display: block;
-  text-align: center;
-}
-
-.card-img-top {
-  ;
-}
-
 #output {
   display: none;
   text-align: center;
-  font-family: 'Fascinate Inline', cursive;
   padding: 50px;
+}
+
+#guessedNumberArea {
+  margin-left: 100px;
+  margin-right: 425px;
+}
+
+#computerOutputArea {
+  margin-right: 100px;
+  margin-left: 425px;
+}
+
+
+.card-body {
+  display: block;
+  text-align: center;
 }
 
 .white {
@@ -113,7 +119,11 @@ h3, h5 {
   font-size: 35px;
   margin-bottom: 50px;
   color: white;
-  /* opacity: .9; */
+  opacity: .9;
+}
+
+em {
+  color: white;
 }
 
 .jumbotron {

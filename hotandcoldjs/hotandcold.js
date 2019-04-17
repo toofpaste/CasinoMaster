@@ -111,7 +111,7 @@ Attempts.prototype.assignAttemptId = function() {
   return this.currentAttemptId;
 }
 
-//User Interface Logic ---------------------------------------------------------
+// User Interface Logic ---------------------------------------------------------
 
 var attempt = new Attempts();
 
@@ -149,6 +149,3 @@ $(document).ready(function() {
     $("#guessedNumber").val("");
   });
 });
-
-// var rangeNumber = parseInt($("input#rangeNumber").val());
-// console.log("rangeNumber", rangeNumber);
