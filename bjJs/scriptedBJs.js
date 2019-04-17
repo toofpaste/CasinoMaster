@@ -57,6 +57,9 @@ function checkWin(totalUser, totalDeal, betTotal){
      $('#bet2').text(" Loss Amount: $" + (betTotal));
      $("#bank").text("Bank Balance: $" + playerBank);
      localStorage.setItem("bank", playerBank);
+     if(playerBank <= 0){
+       $("#btnCash").fadeIn(1000);
+     };
    };
    if (totalUser === totalDeal){
      playerBank += betTotal[0];
@@ -84,6 +87,9 @@ function checkWin(totalUser, totalDeal, betTotal){
     $('#bet2').text(" Loss Amount: $" + (betTotal));
     $("#bank").text("Bank Balance: $" + playerBank);
     localStorage.setItem("bank", playerBank);
+    if(playerBank <= 0){
+      $("#btnCash").fadeIn(1000);
+    };
    };
    if(totalDeal > 21 && totalUser <= 21){
      playerBank += (betTotal[0]*2);

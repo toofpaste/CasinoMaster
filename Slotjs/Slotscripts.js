@@ -134,7 +134,12 @@ function checkWin(col1, col2, col3, betAmount){
     $("#headline").text("YOU WIN: $" + (betAmount * 25));
     account.balance += betAmount + (betAmount*25);
     localStorage.setItem("bank", account.balance);
-  }else $("#headline").text("LOSER LOSER LOSER");
+  }else{
+    $("#headline").text("LOSER LOSER LOSER");
+    if(account.balance <= 0){
+      $("#btnCash").fadeIn(1000);
+    };
+  }
 };
 var col1 = 0;
 var col2 = 1;
@@ -226,12 +231,4 @@ $(function() {
   });
 
 
-
-
-
-
-
-  $("#spinButton").click(function() {
-
-  });
 });

@@ -137,7 +137,9 @@ h3 {
   display: inline;
   display: none;
 }
-
+#btnCash{
+  display: none;
+}
 /* flashing sign */
 #fontSize {
   font-size: 125px;
