@@ -18,27 +18,33 @@
   <link rel="stylesheet" href="Slotcss/Slotstyles.css" type="text/css" media = "all">
   <script src="Slotjs/Slotscripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <title>Slot Machine</title>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <br><br><br><br><br><br><br><br><br><br>
-            <div class="logo"><b><span>SLOTS! </span></b></div>
-</div>
-            <br><br><br><br><br>
+        <button class="btn btn-default"><a href="blackjack.html" class="btnCash">Cash Out & Go to Blackjack</a></button>
+        <button class="btn btn-default" id = "resetBank" onClick="window.location.reload()">Set Bank Back to $1000</button>
+      <div  class = "jumbotron">
+          <div class="logo"><b><span id = "fontSize">SLOTS! </span></b></div>
+
             <h1 id = "headline"></h1>
             <h1 id = "bal"></h1>
-
         </div>
-      </div>
-    </nav>
+
     <ul class="strand">
-    	<!-- <li> tags create the individual christmas lights. we're going to have 43 -->
+
     	<li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
       <li></li>
       <li></li>
       <li></li>
@@ -67,7 +73,7 @@
 
     <div class="container text-center">
      <br>
-      <div class="row">
+      <div class="row" id = "spaceHold">
         <div class="col-sm-4">
           <ul id = "list0" style="list-style-type:none;">
           </ul>
@@ -82,12 +88,59 @@
         </div>
       </div>
     </div><br>
+    <ul class="strand">
 
-    <footer class="container-fluid text-center" id = "buttonSpin">
-      <p><button type="button" name="button" class = "btn btn-success" id = "spinButton">SPIN TO WIN</button></p>
+    	<li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+    </ul>
+    <div class="container-fluid text-center" id = "buttonSpin">
+      <div class="lever on" id="lever">
+       <div class="track">
+           <div class="stick"></div>
+           <div class="ball">
+             <div class="ripple" id="ripple"></div>
+             <button type="button" name="button" id = "trigger" id="spinButton"></button>
+           </div>
+         </div>
+       </div>
+      <!-- <p><button type="button" name="button" class = "btn btn-success" id = "spinButton">SPIN TO WIN</button></p> -->
 
 
-    </footer>
+    </div>
     <div class="container">
 
       <h4><span id ="printBet"></span></h4>
