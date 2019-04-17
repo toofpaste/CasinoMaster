@@ -1,4 +1,8 @@
-//Business Logic --------------------------------------------------------------
+//Business Logic for selectLevel--------------------------------------------------------------
+
+
+
+//Business Logic for compareNumbers--------------------------------------------------------------
 
 var secretNumber = 100;
 // var secretNumber = Math.floor(Math.random() * 1000);
@@ -120,13 +124,13 @@ Attempts.prototype.assignAttemptId = function() {
 var attempt = new Attempts();
 
 $(document).ready(function() {
-  // $("#userInput").submit(function(event){
+  // $("#selectLevel").submit(function(event){
   //   event.preventDefault();
   //   var levelInput = $("input:radio[name=level]:checked").val();
   //   console.log("levelInput", levelInput);
   //   secretNumber(levelInput);
   // });
-  $("#userInput").submit(function(event) {
+  $("#compareNumbers").submit(function(event) {
     event.preventDefault();
     var guessedNumber = parseInt($("#guessedNumber").val());
     console.log("guessedNumber", guessedNumber);
