@@ -15,36 +15,6 @@
     <title>Cards</title>
   </head>
   <body>
-    <div id="loser">
-
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <img src="https://media.giphy.com/media/3o7TKnrXco2SC0XM1q/giphy.gif" alt="">
-    <img src="https://media0.giphy.com/media/gFjbkip9OIIuI/giphy.gif" alt="">
-    <img src="https://media1.tenor.com/images/38b0de90f5f31fc6fc83e97adc83267d/tenor.gif?itemid=4488258" alt="">
-    <img src="https://www.gamedevmarket.net/file/478ba0a78e9388eff11cc7f599dbad16.gif" alt="">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-
-  </div>
-    <div id="loselose">
       <button class="btn btn-default"><a href="slots.html" class="btnCash">Cash Out & Go to Slots</a></button>
         <button class="btn btn-default" id = "resetBank" onClick="window.location.reload()">Set Bank Back to $1000</button>
     <div  class = "jumbotron">
@@ -63,7 +33,7 @@
 
     <div class="row">
       <div id = "printEnd" class="col-md-4"><p><span id="bet"></span></p><p><span id="bet2"></span></p></div>
-      <div class="col-md-4">
+      <div class="col-md-4" id = "spaceHold">
         <h1><span id="name"></span></h1>
         <br>
         <h1>Dealer Cards</h1>
@@ -75,7 +45,7 @@
     </div>
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class="col-md-4" id = "spaceHold">
         <h1>Your Cards</h1>
         <ul class = "user">
         </ul>
@@ -85,7 +55,8 @@
     </div>
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-4">  <button class="btn btn-primary" id="dealC">Deal Cards</button>
+      <div class="col-md-4" id = "btnSpace">
+        <button class="btn btn-primary" id="dealC">Deal Cards</button>
         <button class="btn btn-primary" id="hit">Hit</button>
         <button class="btn btn-primary" id="stay">Stay</button>
         <button class="btn btn-primary" id="dblDown">Double Down</button>
@@ -98,8 +69,7 @@
 
 
     </div>
-
-  </div>
+<div id = "spaceBet">
   <div class="container" id="imgButtons">
 
     <img src="Slotimg/char2.png" alt="">
@@ -114,5 +84,6 @@
     <img src="img/bet4.png" alt="">
     <img src="img/bet5.png" alt=""> -->
   </div>
+</div>
   </body>
 </html>

@@ -121,8 +121,12 @@ h3 {
   text-align: center;
   font-size: 30px;
 }
-
-
+#spaceHold {
+  height: 300px;
+}
+#btnSpace{
+  height: 35px;
+}
 #cardA1, #cardA2, #cardA3, #cardA4, #cardA5, #cardA6, #cardA7, #cardA9{
   float: left;
   height: 200px;
@@ -137,7 +141,10 @@ h3 {
   display: inline;
   display: none;
 }
-#btnCash{
+#spaceBet {
+  height: 165px;
+}
+#resetBank{
   display: none;
 }
 /* flashing sign */
@@ -164,7 +171,7 @@ h3 {
   font: 100 15vh "Vibur";
   font-family: 'Fascinate Inline', cursive;
   color: #fff;
-  text-shadow: 0 -40px 300px, 0 0 2px, 0 0 1em #f4f4f4, 0 0 0.5em #f4f4f4, 0 0 0.1em #f4f4f4, 0 10px 3px #000;
+  text-shadow: 0 -40px 400px, 0 0 2px, 0 0 1em #f4f4f4, 0 0 0.5em #f4f4f4, 0 0 0.1em #f4f4f4, 0 10px 3px #000;
 }
 .logo b span{
   animation: blink linear infinite 3s;

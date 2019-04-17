@@ -19,7 +19,7 @@ function dealUser(value, suit, suitName, valueName, totalUser){
   userTrack.push(value);
   $("ul.user").append("<li id = 'cardA" + pl + "'><img src = 'img/" + imagePath[suit] + value + ".jpg'" + " of " + suitName[suit] + "</li>");
   $("#userVal").text("Value of: " + totalUser);
-  $('#cardA' + pl).slideDown(1000);
+  $('#cardA' + pl).slideDown(500);
 };
 
 function dealDeal(value, suit, suitName, valueName, totalDeal){
@@ -36,7 +36,7 @@ function dealDeal(value, suit, suitName, valueName, totalDeal){
   dealTrack.push(value);
   $("ul.deal").append("<li id = 'cardD" + dl + "'><img src = 'img/" + imagePath[suit] + value + ".jpg'" + " of " + suitName[suit] + "</li>");
   $("#dealVal").text("Value of: " + totalDeal);
-  $('#cardD' + dl).slideDown(1000);
+  $('#cardD' + dl).slideDown(500);
 };
 function addCard(rngVal){
   if(rngVal <= 8){
@@ -49,7 +49,7 @@ function addCard(rngVal){
 };
 
 function checkWin(totalUser, totalDeal, betTotal){
-  $("#reset1").fadeIn(1000);
+  $("#reset1").fadeIn(500);
   if (totalUser >= 22){
     $("#bankBal").text("Balance: $" + playerBank)
      $('#name').text("   User: " + totalUser + "    BUST - - - - Dealer Wins");
@@ -58,7 +58,7 @@ function checkWin(totalUser, totalDeal, betTotal){
      $("#bank").text("Bank Balance: $" + playerBank);
      localStorage.setItem("bank", playerBank);
      if(playerBank <= 0){
-       $("#btnCash").fadeIn(1000);
+       $("#resetBank").fadeIn(500);
      };
    };
    if (totalUser === totalDeal){
@@ -88,7 +88,7 @@ function checkWin(totalUser, totalDeal, betTotal){
     $("#bank").text("Bank Balance: $" + playerBank);
     localStorage.setItem("bank", playerBank);
     if(playerBank <= 0){
-      $("#btnCash").fadeIn(1000);
+      $("#resetBank").fadeIn(500);
     };
    };
    if(totalDeal > 21 && totalUser <= 21){
@@ -104,7 +104,7 @@ function checkWin(totalUser, totalDeal, betTotal){
 function start(){
   userTrack = [];
   dealTrack = [];
-  $("#reset1").fadeOut(1000);
+  $("#reset1").fadeOut(500);
   var suitName = ["Spades" , "Hearts", "Diamonds", "Clubs"];
   var valueName = [2, 3, 4, 5, 6, 7 ,8 ,9, 10, "Jack", "Queen", "King", "Ace"];
   //               0  1  2  3  4  5  6  7  8     9        10      11      12
@@ -116,7 +116,7 @@ function start(){
   var betTotal = [];
 
   $("#plus1").unbind("click").click(function(){
-    $("button#dealC").fadeIn(1000);
+    $("button#dealC").fadeIn(500);
     if(playerBank > 0){
     var clickedNum = 1;
     playerBank = bet(clickedNum, betTotal);
@@ -125,7 +125,7 @@ function start(){
 
 
   $("#plus5").unbind("click").click(function(){
-    $("button#dealC").fadeIn(1000);
+    $("button#dealC").fadeIn(500);
     if(playerBank >= 5){
     var clickedNum = 5;
     playerBank = bet(clickedNum, betTotal);
@@ -135,7 +135,7 @@ function start(){
 
 
   $("#plus10").unbind("click").click(function(){
-    $("button#dealC").fadeIn(1000);
+    $("button#dealC").fadeIn(500);
     if(playerBank >= 10){
     var clickedNum = 10;
     playerBank = bet(clickedNum, betTotal);
@@ -145,7 +145,7 @@ function start(){
 
 
   $("#plus50").unbind("click").click(function(){
-    $("button#dealC").fadeIn(1000);
+    $("button#dealC").fadeIn(500);
     if(playerBank >= 50){
     var clickedNum = 50;
     playerBank = bet(clickedNum, betTotal);
@@ -155,7 +155,7 @@ function start(){
 
 
   $("#plus100").unbind("click").click(function(){
-    $("button#dealC").fadeIn(1000);
+    $("button#dealC").fadeIn(500);
     if(playerBank >= 100){
     var clickedNum = 100;
     playerBank = bet(clickedNum, betTotal);
@@ -164,16 +164,16 @@ function start(){
 
 
   $("button#dealC").unbind("click").click(function(){
-    $("#plus1").fadeOut(1000);
-    $("#plus5").fadeOut(1000);
-    $("#plus10").fadeOut(1000);
-    $("#plus50").fadeOut(1000);
-    $("#plus100").fadeOut(1000);
-    $("button#dealC").fadeOut(1000);
-    $("button#hit").fadeIn(1000);
-    $("button#stay").fadeIn(1000);
+    $("#plus1").fadeOut(500);
+    $("#plus5").fadeOut(500);
+    $("#plus10").fadeOut(500);
+    $("#plus50").fadeOut(500);
+    $("#plus100").fadeOut(500);
+    $("button#dealC").fadeOut(500);
+    $("button#hit").fadeIn(500);
+    $("button#stay").fadeIn(500);
     if(playerBank > 0 && playerBank >= (betTotal * 2)){
-    $("button#dblDown").fadeIn(1000);
+    $("button#dblDown").fadeIn(500);
   };
     var userAce = 0;
     var dealAce = 0;
@@ -191,7 +191,7 @@ function start(){
       dealDeal(rngVal, rngSuit, suitName, valueName, totalDeal);
     });
     $("button#hit").unbind("click").click(function(){
-      $("#dblDown").fadeOut(1000);
+      $("#dblDown").fadeOut(100);
       for(var tp = 0; tp < userTrack.length; tp++){
         if(userTrack[tp] === 12 && totalUser > 21){
           userAce++;
@@ -223,9 +223,9 @@ function start(){
           dealAce++;
         };
       };
-      $("#dblDown").fadeOut(1000);
-      $("#stay").fadeOut(1000);
-      $("#hit").fadeOut(1000);
+      $("#dblDown").fadeOut(100);
+      $("#stay").fadeOut(500);
+      $("#hit").fadeOut(500);
     while(totalDeal <= 16){
       rngVal = randVal();
       totalDeal += addCard(rngVal);
@@ -248,9 +248,9 @@ function start(){
     checkWin(totalUser, totalDeal, betTotal);
     });
     $("button#dblDown").unbind("click").click(function(){
-      $("#dblDown").fadeOut(1000);
-      $("#stay").fadeOut(1000);
-      $("#hit").fadeOut(1000);
+      $("#dblDown").fadeOut(500);
+      $("#stay").fadeOut(500);
+      $("#hit").fadeOut(500);
       var dblDbl = betTotal[0];
       playerBank = bet(dblDbl, betTotal);
       rngVal = randVal();
@@ -303,6 +303,9 @@ return playerBank;
   var userTrack = [];
   var dealTrack = [];
 $(function(){
+  if(playerBank <= 0){
+    $("#resetBank").fadeIn(500);
+  };
   $("#resetBank").click(function(){
       localStorage.setItem("bank", 1000);
   });
@@ -312,23 +315,22 @@ $(function(){
 
 
       $("#reset1").unbind("click").click(function(){
-
-        if(playerBank != 0){
-        $("#imgButtons").fadeIn(1000);
-        $("#plus1").fadeIn(1000);
-        $("#plus5").fadeIn(1000);
-        $("#plus10").fadeIn(1000);
-        $("#plus50").fadeIn(1000);
-        $("#plus100").fadeIn(1000);
+        if(playerBank > 0){
+        $("#imgButtons").fadeIn(500);
+        $("#plus1").fadeIn(500);
+        $("#plus5").fadeIn(500);
+        $("#plus10").fadeIn(500);
+        $("#plus50").fadeIn(500);
+        $("#plus100").fadeIn(500);
         $("ul").empty();
         $("ul").empty();
         $("#bet").empty();
         $("#bet2").empty();
         $("#name").empty();
         $("#bank").empty();
-        $("#hit").fadeOut(1000);
-        $("#stay").fadeOut(1000);
-        $("#dblDown").fadeOut(1000);
+        $("#hit").fadeOut(500);
+        $("#stay").fadeOut(500);
+        $("#dblDown").fadeOut(500);
         $("#printBet").empty();
         $("#userVal").empty();
         $("#dealVal").empty();
@@ -336,8 +338,10 @@ $(function(){
         $("#btnCash").click(function(){
             localStorage.setItem("bank", playerBank);
         });
-      }else {$("#loselose").fadeOut(1000);
-              $("#loser").fadeIn(1000);}
+      }else {
+        alert("Please Reset Bank Balance");
+
+      }
       });
 
 

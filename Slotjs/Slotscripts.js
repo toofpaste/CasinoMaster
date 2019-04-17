@@ -137,7 +137,7 @@ function checkWin(col1, col2, col3, betAmount){
   }else{
     $("#headline").text("LOSER LOSER LOSER");
     if(account.balance <= 0){
-      $("#btnCash").fadeIn(1000);
+      $("#resetBank").fadeIn(1000);
     };
   }
 };
@@ -190,6 +190,9 @@ var account = {
 $(function() {
   // var foo = localStorage.getItem("bank");
   // console.log(foo);
+  if(account.balance <= 0){
+    $("#resetBank").fadeIn(1000);
+  };
   $("#resetBank").click(function(){
       localStorage.setItem("bank", 1000);
   });
