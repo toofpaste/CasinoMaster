@@ -1,0 +1,98 @@
+<!-- This section sets up our html code, links to stylesheets and scripts.
+Editing this section is generally not recommended. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="hotandcoldcss/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="hotandcoldcss/hotandcoldlevel.css" rel="stylesheet" type="text/css">
+  <script src="hotandcoldjs/jquery-3.3.1.js"></script>
+  <script src="hotandcoldjs/hotandcoldlevel.js"></script>
+  <link rel="stylesheet" href="hotandcoldcss/hotandcoldlevel.css">
+  <title>Site Title</title>
+</head>
+  <body>
+
+    <!-- This section is the header of the site. ---------------------------------------------------------------->
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Hot and Cold</h1>
+        <p>A Simple Game From Your Childhood</p>
+      </div>
+
+      <!-- This section is selectLevel ----------------------------------------------------------->
+
+      <div id="selectLevel">
+        <div class="row">
+          <div class="col-md-4">
+            <div id="easyLevel">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/easy.jpg" alt="picture of Peter Griffin">
+                <div class="card-body">
+                  <h5 class="card-title">Easy</h5>
+                  <em>Range 0 to 100</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark" id="easy">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="mediumLevel">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/medium.jpg" alt="picture of Kyoto">
+                <div class="card-body">
+                  <h5 class="card-title">Medium</h5>
+                  <em>Range 0 to 1000</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark" id="medium">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="hardLevel">
+              <div class="card">
+                <img class="card-img-top" src="hotandcoldimg/hard.jpg" alt="picture of Bordeaux">
+                <div class="card-body">
+                  <h5 class="card-title">Hard</h5>
+                  <em>Range 0 to 10000</em><br>
+                  <br>
+                  <button type="button" class="btn btn-dark" id="hard">Play!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- <label for="user-input">Enter an upper range number:</label>
+        <input id="rangeNumber" type="number" class="form-control" name="user-input"> -->
+
+        <!-- This section is compareNumbers ------------------------------------------------------------->
+
+      <form id="compareNumbers">
+        <div class="form-group">
+          <label for="user-input">Guess the number:</label>
+          <input id="guessedNumber" type="number" class="form-control" name="user-input" required/>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-dark">Guess!</button>
+          <button value="Refresh Page" class="btn btn-dark" onClick="window.location.reload()">New Game</button>
+        </div>
+      </form>
+
+      <!-- This section is the program's output ----------------------------------------------------------------->
+
+      <div class="jumbotron" id="output">
+        <h3 id="underOverOutput"></h3>
+        <h5 id="hotColdOutput"></h5>
+        <h5 id="attemptOutput"></h5>
+      </div>
+      <!-- As with the very first section,
+      this section should generally not be edited. -------------------------------------------------------------->
+    </div>
+  </body>
+</html>
