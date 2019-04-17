@@ -15,9 +15,8 @@
 
 #computerOutputArea {
   margin-right: 100px;
-  margin-left: 425px;
+  margin-left: 150px;
 }
-
 
 .card-body {
   display: block;
@@ -112,16 +111,6 @@
   background-attachment: fixed;
 }
 
-h3, h5 {
-  font-family:inherit;
-  text-align: center;
-  font-weight: bold;
-  font-size: 35px;
-  margin-bottom: 50px;
-  color: white;
-  opacity: .9;
-}
-
 em {
   color: white;
 }
@@ -138,6 +127,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  color: white;
 }
 
 img {
