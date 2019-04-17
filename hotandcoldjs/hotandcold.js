@@ -122,14 +122,14 @@ $(document).ready(function() {
       $("#selectLevel").hide();
       $("#compareNumbers").show();
       secretNumber = Math.floor(Math.random() * 100);
-      // console.log("easySecretNumber", secretNumber);
+      console.log("easySecretNumber", secretNumber);
     });
     $("#medium").click(function() {
       $("#compareNumbers").removeClass();
       $("#selectLevel").hide();
       $("#compareNumbers").show();
       secretNumber = Math.floor(Math.random() * 1000);
-      // console.log("mediumSecretNumber", secretNumber);
+      console.log("mediumSecretNumber", secretNumber);
     });
     $("#hard").click(function() {
       $("#compareNumbers").removeClass();
@@ -141,7 +141,7 @@ $(document).ready(function() {
   $("#compareNumbers").submit(function(event) {
     event.preventDefault();
     var guessedNumber = parseInt($("#guessedNumber").val());
-    // console.log("guessedNumber", guessedNumber);
+    console.log("guessedNumber", guessedNumber);
     compareNumbers(guessedNumber, secretNumber, attempt);
     var newAttempt = new Attempts(attempt);
     attempt.addAttempt(newAttempt);

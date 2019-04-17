@@ -19,87 +19,86 @@
 }
 
 .success {
-  background-image: url(https://i.imgur.com/9VaUjkj.jpg);
+  background-image: url("https://i.imgur.com/9VaUjkj.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within5 {
-  background-image: url(https://i.imgur.com/bU9USjt.jpg);
+  background-image: url("https://i.imgur.com/bU9USjt.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within10 {
-  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-image: url("https://i.imgur.com/gqG0mZa.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within20 {
-  background-image: url(https://i.imgur.com/gDgBBBN.jpg);
+  background-image: url("https://i.imgur.com/bW05cN5.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within30 {
-  background-image: url(http://deaddarlings.com/wp-content/uploads/2017/06/800px-Campfires_flames.jpeg);
+  background-image: url("https://i.imgur.com/tlKEL1n.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within40 {
-  background-image: url(https://i.imgur.com/gJZnsno.jpg);
+  background-image: url("https://i.imgur.com/hAZcuDu.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within50 {
-  background-image: url(https://i.imgur.com/1THjrO3.jpg);
+  background-image: url("https://i.imgur.com/jSodZ7c.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within60 {
-  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-image: url("https://i.imgur.com/sNRBq9L.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within70 {
-  background-image: url(http://gewoonschoon.info/wp-content/uploads/fire-torches-five-light-fire-torches-stone-wall-illustration-of-ancient.jpg);
+  background-image: url("https://i.imgur.com/nLgamkh.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within80 {
-  background-image: url(https://i.imgur.com/3guyKnJ.jpg);
+  background-image: url("https://i.imgur.com/EuR16NL.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .within90 {
-
-  background-image: url(https://media1.tenor.com/images/e54295364390057f7482f2966e2a4cd0/tenor.gif?itemid=5390133);
+  background-image: url("https://i.imgur.com/D1tX9vj.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .tooFar {
-  background-image: url(http://pngimg.com/uploads/astronaut/astronaut_PNG13.png);
+  background-image: url("https://i.imgur.com/iWDAFFr.jpg");
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
 }
 
