@@ -1,12 +1,4 @@
-//Business Logic for selectLevel--------------------------------------------------------------
-
-
-
 //Business Logic for compareNumbers--------------------------------------------------------------
-
-var secretNumber = 100;
-// var secretNumber = Math.floor(Math.random() * 1000);
-console.log("secretNumber", secretNumber);
 
 function compareNumbers(guessedNumber, secretNumber, attempt) {
   if(guessedNumber === secretNumber) {
@@ -20,14 +12,14 @@ function compareNumbers(guessedNumber, secretNumber, attempt) {
     // console.log("Guess again, it's higher");
   }
   var difference = Math.abs((guessedNumber/secretNumber));
-  console.log("difference", difference);
+  // console.log("difference", difference);
   if((guessedNumber === secretNumber)) {
     $("body").removeClass();
     $("#output").removeClass();
     $("body").addClass("success");
     $("#output").addClass("white");
     $("#hotColdOutput").text("");
-    if(countGuess !== 1){
+    if(countAttempts !== 1){
     $("#attemptOutput").text("It took you " + attempt.attempts[attempt.attempts.length - 1].id + " attempts");
   } else $("#attemptOutput").text("It took you 1 attempt");
     // console.log("No text needed");
@@ -90,7 +82,7 @@ function compareNumbers(guessedNumber, secretNumber, attempt) {
     $("#output").removeClass();
     $("body").addClass("within90");
     $("#hotColdOutput").text("You are within 90%!");
-    console.log("You're not even within 500!");
+    // console.log("You're not even within 500!");
   } else {
     $("body").removeClass();
     $("#output").removeClass();
@@ -99,13 +91,13 @@ function compareNumbers(guessedNumber, secretNumber, attempt) {
   }
 }
 
+// Business Logic for countAttempts -------------------------------------------
 
-
-var countGuess = 0;
+var countAttempts = 0;
 function Attempts() {
   this.attempts = [],
   this.currentAttemptId = 1
-  countGuess++;
+  countAttempts++;
   // console.log("Attempts", attempt);
 }
 
@@ -124,22 +116,39 @@ Attempts.prototype.assignAttemptId = function() {
 var attempt = new Attempts();
 
 $(document).ready(function() {
-  // $("#selectLevel").submit(function(event){
-  //   event.preventDefault();
-  //   var levelInput = $("input:radio[name=level]:checked").val();
-  //   console.log("levelInput", levelInput);
-  //   secretNumber(levelInput);
-  // });
+  var secretNumber;
+    $("#easy").click(function() {
+      $("#compareNumbers").removeClass();
+      $("#selectLevel").hide();
+      $("#compareNumbers").show();
+      secretNumber = Math.floor(Math.random() * 100);
+      // console.log("easySecretNumber", secretNumber);
+    });
+    $("#medium").click(function() {
+      $("#compareNumbers").removeClass();
+      $("#selectLevel").hide();
+      $("#compareNumbers").show();
+      secretNumber = Math.floor(Math.random() * 1000);
+      // console.log("mediumSecretNumber", secretNumber);
+    });
+    $("#hard").click(function() {
+      $("#compareNumbers").removeClass();
+      $("#selectLevel").hide();
+      $("#compareNumbers").show();
+      secretNumber = Math.floor(Math.random() * 10000);
+      // console.log("hardSecretNumber", secretNumber);
+    });
   $("#compareNumbers").submit(function(event) {
     event.preventDefault();
     var guessedNumber = parseInt($("#guessedNumber").val());
-    console.log("guessedNumber", guessedNumber);
-    // var rangeNumber = parseInt($("input#rangeNumber").val());
-    // console.log("rangeNumber", rangeNumber);
+    // console.log("guessedNumber", guessedNumber);
     compareNumbers(guessedNumber, secretNumber, attempt);
     var newAttempt = new Attempts(attempt);
     attempt.addAttempt(newAttempt);
     $("#output").show();
     $("#guessedNumber").val("");
-  })
+  });
 });
+
+// var rangeNumber = parseInt($("input#rangeNumber").val());
+// console.log("rangeNumber", rangeNumber);
