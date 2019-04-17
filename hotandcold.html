@@ -6,10 +6,10 @@ Editing this section is generally not recommended. -->
 <head>
   <meta charset="utf-8">
   <link href="hotandcoldcss/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="hotandcoldcss/hotandcoldcss.css" rel="stylesheet" type="text/css">
+  <link href="hotandcoldcss/hotandcold.css" rel="stylesheet" type="text/css">
   <script src="hotandcoldjs/jquery-3.3.1.js"></script>
   <script src="hotandcoldjs/hotandcold.js"></script>
-  <link rel="stylesheet" href="hotandcoldcss/hotandcoldcss.css">
+  <link rel="stylesheet" href="hotandcoldcss/hotandcold.css">
   <title>Site Title</title>
 </head>
   <body>
@@ -24,48 +24,49 @@ Editing this section is generally not recommended. -->
 
       <!-- This section is selectLevel ----------------------------------------------------------->
 
-      <form id="selectLevel">
+      <div id="selectLevel">
         <div class="row">
           <div class="col-md-4">
-            <div id="easy">
+            <div id="easyLevel">
               <div class="card">
                 <img class="card-img-top" src="hotandcoldimg/easy.jpg" alt="picture of Peter Griffin">
                 <div class="card-body">
                   <h5 class="card-title">Easy</h5>
                   <em>Range 0 to 100</em><br>
                   <br>
-                  <button type="button" class="btn btn-dark">Play!</button>
+                  <button type="button" class="btn btn-dark" id="easy">Play!</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div id="medium">
+            <div id="mediumLevel">
               <div class="card">
                 <img class="card-img-top" src="hotandcoldimg/medium.jpg" alt="picture of Kyoto">
                 <div class="card-body">
                   <h5 class="card-title">Medium</h5>
                   <em>Range 0 to 1000</em><br>
                   <br>
-                  <button type="button" class="btn btn-dark">Play!</button>
+                  <button type="button" class="btn btn-dark" id="medium">Play!</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div id="hard">
+            <div id="hardLevel">
               <div class="card">
                 <img class="card-img-top" src="hotandcoldimg/hard.jpg" alt="picture of Bordeaux">
                 <div class="card-body">
                   <h5 class="card-title">Hard</h5>
                   <em>Range 0 to 10000</em><br>
                   <br>
-                  <button type="button" class="btn btn-dark">Play!</button>
+                  <button type="button" class="btn btn-dark" id="hard">Play!</button>
                 </div>
               </div>
             </div>
           </div>
-        </form>
+        </div>
+      </div>
 
         <!-- <label for="user-input">Enter an upper range number:</label>
         <input id="rangeNumber" type="number" class="form-control" name="user-input"> -->
@@ -90,14 +91,8 @@ Editing this section is generally not recommended. -->
         <h5 id="hotColdOutput"></h5>
         <h5 id="attemptOutput"></h5>
       </div>
-      <!-- <div id="output">
-        <h3><span id="underOverOutput"></span></h3>
-        <h5><span id="hotColdOutput"</h5>
-      </div> -->
-
       <!-- As with the very first section,
       this section should generally not be edited. -------------------------------------------------------------->
-
-      </div>
-      </body>
-      </html>
+    </div>
+  </body>
+</html>
