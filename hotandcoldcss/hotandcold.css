@@ -7,11 +7,15 @@
   text-align: center;
 }
 
+.card-img-top {
+  ;
+}
+
 #output {
   display: none;
   text-align: center;
   font-family: 'Fascinate Inline', cursive;
-  padding: 20px;
+  padding: 50px;
 }
 
 .white {
@@ -102,14 +106,31 @@
   background-attachment: fixed;
 }
 
-/* h3, h5 {
-  font-family: 'Fascinate Inline', cursive;
+h3, h5 {
+  font-family:inherit;
   text-align: center;
-  font-size: 50px;
+  font-weight: bold;
+  font-size: 35px;
   margin-bottom: 50px;
-  color: #aa9c19;
-  opacity: .9;
-} */
+  color: white;
+  /* opacity: .9; */
+}
 
-/* border: 1px solid black; */
-/* background-color: grey; */
+.jumbotron {
+  background-color: transparent;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-image: url("https://i.imgur.com/9VaUjkj.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  height: 800px;
+  width: 600px;
+}
