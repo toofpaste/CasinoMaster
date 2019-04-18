@@ -8,16 +8,6 @@
   padding: 50px;
 }
 
-#guessedNumberArea {
-  margin-left: 100px;
-  margin-right: 425px;
-}
-
-#computerOutputArea {
-  margin-right: 100px;
-  margin-left: 150px;
-}
-
 .card-body {
   display: block;
   text-align: center;
