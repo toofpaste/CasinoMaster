@@ -1,22 +1,28 @@
-# _{Application Name}_
+# _Casino_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A page offering several games, including "Guess the Number", "Blackjack", "Slot Machine". 4-18-2019_
 
-#### By _**{List of contributors}**_
+#### By _**Joe Barnes, Marc Davies, Mike Larragueta, Marina Poltorak**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_On launch, user is presented with a landing page from which 3 games can be played:_
+
+* _"Guess the Number"
+
+_The goal of this game is to guess a number that was randomly set by the computer. Every time a number is entered, the game will return whether the random number is higher, lower or a match. The game also indicates how small or large the difference between the two numbers is. 3 difficulty levels are offered, which set a different range for the random number (0-100 for Easy, 0-1000 for Medium, 0-10000 for Hard.)_
+
+* _"Blackjack"_
+
+* _"Slot Machine"_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone the repository from GitHub_
+* _Launch index.html_
+* _Alternatively, launch toofpaste.github.io/CasinoMaster_
+* _The site can also be accessed at ..._
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 ## Specs For Blackjack
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
@@ -37,7 +43,17 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 | program checks for win | image 1= image 2 = image 3 | payout 25 * bet amount = 2500 |
 | program checks for cherries | cherry - cherry - cherry | payout 250 * bet amount = 25000 |
 | User goes bankrupt | bank = 0 | give option to reset bank to 1000 |
-| if user switches back to other game | save bank balance in cookies | transfer to correct page | 
+| if user switches back to other game | save bank balance in cookies | transfer to correct page |
+
+## Specs For Hot and Cold Game
+
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| Site offers the game at user selected level | Click on Easy, Medium or Hard | Game launches site at user selected difficulty level. |
+| Game compares user inputted number (guessedNumber) to secretNumber | 50 | Game shows a percentage comparison of guessedNumber to secretNumber, states if < or >. |
+| If guessedNumber is === to secretNumber, game shows "success" screen. | 75 | Game shows the success screen. |
+| Game refreshes site and offers the game again, asking user to select level. | new game click | Site offers the game at user selected level. |
+
 
 ## Known Bugs
 
@@ -45,14 +61,14 @@ _{Are there issues that have not yet been resolved that you want to let users kn
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Please contact us if you run into any issues or have questions, ideas or feedback._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_HTML, CSS, Javascript_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software is licensed under the GPL license.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **Joe Barnes, Marc Davies, Mike Larragueta, Marina Poltorak**
